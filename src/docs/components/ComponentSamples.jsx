@@ -1,13 +1,15 @@
-import Title from "./Title";
 import PropTypes from "prop-types";
+import Description from "./Description";
 
 const ComponentSamples = ({ title, description, children }) => {
   return (
-    <>
-      <Title>{title}</Title>
-      <span>{description}</span>
+    <section className="component-sample">
+      <h1 className="component-title">{title}</h1>
+      {
+        description && <Description>{description}</Description>
+      }
       {children}
-    </>
+    </section>
   )
 }
 

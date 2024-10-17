@@ -1,0 +1,25 @@
+body {
+  max-width: 1500px;
+}
+
+.component-sample .sample pre {
+  white-space: pre-wrap;
+  margin-top: 0;
+}
+
+.component-sample .sample-body {
+  display: flex;
+  gap: 10px
+}
+
+.component-sample .sample-body .sample-panel-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.component-sample .sample-body .sample-panel-right {
+  flex: 2;
+}
+
