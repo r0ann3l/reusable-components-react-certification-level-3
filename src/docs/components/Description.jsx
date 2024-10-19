@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 
 const Description = ({ children }) => {
   return (
-    <p className="description">
+    <div className="description">
       {children}
-    </p>
+    </div>
   );
 }
 

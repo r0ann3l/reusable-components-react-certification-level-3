@@ -15,7 +15,7 @@ const ComponentSamples = ({ title, description, children }) => {
 
 ComponentSamples.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
+  description: PropTypes.node,
   children: PropTypes.node
 }
 

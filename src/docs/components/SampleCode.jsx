@@ -2,11 +2,14 @@ import PropTypes from "prop-types";
 
 const SampleCode = ({ code }) => {
   return (
-    <pre>
-      <code>
-        {code}
-      </code>
-    </pre>
+    <>
+      <h2 className="sample-code-title">Sample code</h2>
+      <pre>
+        <code>
+          {code}
+        </code>
+      </pre>
+    </>
   );
 }
 
