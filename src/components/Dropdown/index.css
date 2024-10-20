@@ -11,6 +11,9 @@
   position: absolute;
   z-index: 1;
   background-color: #161f27;
+  max-height: 250px;
+  height: fit-content;
+  overflow: auto;
 }
 
 .dropdown ul li {

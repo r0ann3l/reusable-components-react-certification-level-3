@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import Modal from "./components/Modal";
 import Dialog from "./components/Dialog";
 import PopupContextProvider from "./contexts/PopupContext";
+import './index.css'
 
 const Popup = ({
   open = false,

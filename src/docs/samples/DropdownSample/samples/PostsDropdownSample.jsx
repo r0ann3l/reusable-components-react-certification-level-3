@@ -42,7 +42,7 @@ const PostsDropdownSample = () => {
             In this example, we're using an API to get fake posts.
             By setting <code>labelProperty="title"</code>, it is possible to show the title of the post without mapping the reponse.
           </p>
-          <p>Also, it is possible to limit the amount of items shown in the list of options, with the prop <code>limit</code>.</p>
+          <p>Also, it is possible to limit the amount of items shown in the list of options, with the prop <code>limit</code>. By default is <code>50</code>.</p>
         </>
       }
     >
@@ -53,7 +53,7 @@ const PostsDropdownSample = () => {
           values={result}
           valueChange={setPost}
           labelProperty="title"
-          limit={5}
+          limit={10}
         />
       </section>
       <section>

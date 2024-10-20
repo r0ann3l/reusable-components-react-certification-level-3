@@ -11,7 +11,7 @@ const Dropdown = ({
   valueChange,
   labelProperty = 'value',
   idProperty = 'id',
-  limit = 10
+  limit = 50
 }) => {
   const [query, setQuery] = useState('');
   const [showOptions, setShowOptions] = useState(false);
