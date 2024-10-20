@@ -41,7 +41,7 @@ const PostsDropdownSample = () => {
         <>
           <p>
             In this example, we're using an API to get fake posts.
-            By setting <code>labelProperty="title"</code>, it is possible to show the title of the post without mapping the reponse.
+            By setting <code>labelProperty="title"</code>, it is possible to show the title of the post without mapping the response.
           </p>
           <p>Also, it is possible to limit the amount of items shown in the list of options, with the prop <code>limit</code>. By default is <code>50</code>.</p>
         </>
