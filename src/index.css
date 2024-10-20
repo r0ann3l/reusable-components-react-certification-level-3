@@ -2,7 +2,7 @@ body {
   max-width: 1500px;
 }
 
-h2.sample-code-title {
+h2.sample-code-title, p {
   margin-top: 0;
 }
 
@@ -32,23 +32,76 @@ h2.sample-code-title {
 }
 
 .component-sample .sample-body .sample-panel-right {
-  flex: 2;
+  flex: 1.5;
 }
 
-.dialog-overlay {
+.popup {
+  box-shadow: 0px 0px 2px gray;
+}
+
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.dialog-container {
+.modal-container {
   height: fit-content;
+}
+
+.dialog-container {
+  position: fixed;
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-header, .popup-footer {
+  background-color: #161f27;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-header .close-icon {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.popup-body {
   background-color: #202b38;
+}
+
+.popup-section {
+  padding: 10px;
+}
+
+#selected-image-container, #images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#selected-image-container {
+  margin-bottom: 20px;
+}
+
+#images-container {
+  gap: 10px
+}
+
+#images-container .image {
+  cursor: pointer;
 }
 

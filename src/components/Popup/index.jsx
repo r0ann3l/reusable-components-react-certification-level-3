@@ -6,7 +6,7 @@ import PopupContextProvider from "./contexts/PopupContext";
 const Popup = ({
   open = false,
   onClose,
-  children,
+  body,
   header,
   footer,
   mode = 'modal',
@@ -21,7 +21,7 @@ const Popup = ({
         footer={footer}
         autoclose={autoclose}
         showClose={showClose}
-        body={children}
+        body={body}
       >
         {
           mode === 'modal' ? <Modal /> : <Dialog />
@@ -34,7 +34,7 @@ const Popup = ({
 Popup.propTypes = {
   open: PropTypes.bool,
   onClose: PropTypes.func,
-  children: PropTypes.node,
+  body: PropTypes.node,
   header: PropTypes.node,
   footer: PropTypes.node,
   mode: PropTypes.oneOf(['modal', 'dialog']),

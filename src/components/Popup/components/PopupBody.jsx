@@ -8,9 +8,11 @@ const PopupBody = () => {
   return (
     <>
       {
-        header ?
+        header || showClose ?
           <div className="popup-section popup-header">
-            {header}
+            <div>
+              {header}
+            </div>
             {
               showClose ? <PopupCloseIcon onClose={onClose} /> : null
             }
