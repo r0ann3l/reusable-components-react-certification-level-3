@@ -1,10 +1,10 @@
 import ComponentSamples from "../../components/ComponentSamples";
-import ConfirmationDialogSample from "./ConfirmationDialogSample";
-import ConfirmationModalSample from "./ConfirmationModalSample";
-import HtmlContentModalSample from "./HtmlContentModalSample";
+import ConfirmationDialogSample from "./samples/ConfirmationDialogSample";
+import ConfirmationModalSample from "./samples/ConfirmationModalSample";
+import HtmlContentModalSample from "./samples/HtmlContentModalSample";
 
 const DialogSample = () => {
-  
+
   return (
     <ComponentSamples
       title={'Generic dialog'}

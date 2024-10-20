@@ -1,7 +1,7 @@
-import Sample from "../../components/Sample";
-import Popup from "../../../components/Popup";
-import usePopup from "../../../components/Popup/hooks/usePopup";
-import ImageGallery from "./components/ImageGallery";
+import Sample from "../../../components/Sample";
+import Popup from "../../../../components/Popup";
+import usePopup from "../../../../components/Popup/hooks/usePopup";
+import ImageGallery from "../components/ImageGallery";
 
 const CODE_SAMPLE = `
 const ConfirmationDialogSample = () => {

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Sample from "../../components/Sample";
-import Popup from "../../../components/Popup";
-import usePopup from "../../../components/Popup/hooks/usePopup";
+import Sample from "../../../components/Sample";
+import Popup from "../../../../components/Popup";
+import usePopup from "../../../../components/Popup/hooks/usePopup";
 
 const CODE_SAMPLE = `
 const ConfirmationDialogSample = () => {
@@ -55,7 +55,7 @@ const ConfirmationDialogSample = () => {
       description={
         <>
           <p>By using the prop <code>mode="dialog"</code> it is possible to show the popup as a Dialog. </p>
-          <p>Combined with the option <code>showClose</code> set to <code>true</code>, we'll have an option to close the Dialog</p>
+          <p>Combined with the option <code>showClose</code> set to <code>true</code>, we'll have an option to close the Dialog.</p>
         </>
       }
     >

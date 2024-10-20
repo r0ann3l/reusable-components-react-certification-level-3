@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Sample from "../../components/Sample";
-import Popup from "../../../components/Popup";
-import usePopup from "../../../components/Popup/hooks/usePopup";
+import Sample from "../../../components/Sample";
+import Popup from "../../../../components/Popup";
+import usePopup from "../../../../components/Popup/hooks/usePopup";
 
 const CODE_SAMPLE = `
 const ConfirmationDialogSample = () => {
@@ -57,10 +57,10 @@ const ConfirmationModalSample = () => {
       code={CODE_SAMPLE}
       description={
         <>
-          <p>The popup's <code>header</code>, <code>body</code>, and <code>footer</code> could be any HTML/component the you want</p>
+          <p>The popup's <code>header</code>, <code>body</code>, and <code>footer</code> could be any HTML/component the you want.</p>
           <p>
             By default, when the user clicks outside the modal, it will be closed. To avoid this behavior, we can set the prop <code>autoclose</code> to <code>false</code>.
-            <strong> Note that this prop doesn't have any effect if <code>mode="dialog"</code></strong>
+            <strong> Note that this prop doesn't have any effect if <code>mode="dialog"</code>.</strong>
           </p>
         </>
       }
