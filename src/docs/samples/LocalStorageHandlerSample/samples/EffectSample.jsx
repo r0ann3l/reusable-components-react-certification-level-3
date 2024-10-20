@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import useLocalStorage from "../../../../components/LocalStorageHandler/useLocalStorage";
-import Input from "../../../components/Input";
+import Input from "../components/Input";
 import Sample from "../../../components/Sample";
 
 const CODE_SAMPLE = `

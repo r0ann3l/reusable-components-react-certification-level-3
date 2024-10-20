@@ -23,7 +23,7 @@ const Input = ({ value, onChange, label, type = 'text', ...props }) => {
 }
 
 Input.propTypes = {
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func,
   label: PropTypes.string,
   type: PropTypes.string,
