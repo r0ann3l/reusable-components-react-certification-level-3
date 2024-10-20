@@ -4,7 +4,8 @@ import Dropdown from "../../../../components/Dropdown";
 import usePostsRequest from "../hooks/usePostsRequest";
 
 const CODE_SAMPLE = `
-const { result, loading } = usePostsRequest();
+const PostsDropdownSample = () => {
+  const { result, loading } = usePostsRequest();
 
   const [post, setPost] = useState();
 
@@ -17,7 +18,7 @@ const { result, loading } = usePostsRequest();
           values={result}
           valueChange={setPost}
           labelProperty="title"
-          limit={5}
+          limit={10}
         />
       </section>
       <section>
