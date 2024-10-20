@@ -1,6 +1,7 @@
 import ComponentSamples from "../../components/ComponentSamples";
 import EffectSample from "./samples/EffectSample";
 import ReloadSample from "./samples/ReloadSample";
+import RemoveSample from "./samples/RemoveSample";
 import ResetSample from "./samples/ResetSample";
 import TwoSyncedInputsSample from "./samples/TwoSyncedInputsSample";
 
@@ -15,6 +16,7 @@ const LocalStorageHandlerSample = () => {
       <ReloadSample />
       <EffectSample />
       <ResetSample />
+      <RemoveSample />
     </ComponentSamples>
   );
 }

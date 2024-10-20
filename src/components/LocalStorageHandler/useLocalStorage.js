@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getValueFromLocalStorage, setValueToLocalStorage } from './utils';
+import { getValueFromLocalStorage, setValueToLocalStorage, removeValueFromLocalStorage } from './utils';
 
 const useLocalStorage = (key, initialValue) => {
   const [value, setValue] = useState(() => {
@@ -28,7 +28,12 @@ const useLocalStorage = (key, initialValue) => {
     changeValue(initialValue);
   }
 
-  return [value, changeValue, resetValue];
+  const removeValue = () => {
+    removeValueFromLocalStorage(key);
+    setValue(undefined);
+  }
+
+  return { value, changeValue, resetValue, removeValue };
 }
 
 export default useLocalStorage;

@@ -4,10 +4,10 @@ import Sample from "../../../components/Sample";
 
 const CODE_SAMPLE = `
 const ReloadSample = () => {
-  const [value, setValue] = useLocalStorage('reload_key', '');
+  const { value, changeValue } = useLocalStorage('reload_key', '');
 
   const handleOnChange = (event) => {
-    setValue(event.target.value);
+    changeValue(event.target.value);
   };
 
   return (
@@ -25,7 +25,7 @@ const ReloadSample = () => {
 `
 
 const ReloadSample = () => {
-  const [value, setValue] = useLocalStorage('reload_key', '');
+  const { value, changeValue } = useLocalStorage('reload_key', '');
 
   const handleOnClickRefreshPage = () => {
     window.location.reload();
@@ -37,7 +37,7 @@ const ReloadSample = () => {
         <Input
           label="Please enter a value"
           value={value}
-          onChange={setValue}
+          onChange={changeValue}
         />
       </section>
       <section>

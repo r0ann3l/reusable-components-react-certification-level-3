@@ -5,14 +5,14 @@ import Sample from "../../../components/Sample";
 
 const CODE_SAMPLE = `
 const EffectSample = () => {
-  const [value, setValue] = useLocalStorage('effect_key', '');
+  const { value, changeValue } = useLocalStorage('effect_key', '');
 
   useEffect(() => {
     console.log({ value })
   }, [value])
 
   const handleOnChange = (event) => {
-    setValue(event.target.value);
+    changeValue(event.target.value);
   };
 
   return (
@@ -30,7 +30,7 @@ const EffectSample = () => {
 `
 
 const EffectSample = () => {
-  const [value, setValue] = useLocalStorage('effect_key', '');
+  const { value, changeValue } = useLocalStorage('effect_key', '');
 
   useEffect(() => {
     console.log({ value })
@@ -49,7 +49,7 @@ const EffectSample = () => {
         <Input
           label="Please enter a value"
           value={value}
-          onChange={setValue}
+          onChange={changeValue}
         />
       </section>
     </Sample>

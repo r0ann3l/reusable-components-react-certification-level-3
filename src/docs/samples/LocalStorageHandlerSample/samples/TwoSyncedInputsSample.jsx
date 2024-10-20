@@ -4,10 +4,10 @@ import Sample from "../../../components/Sample";
 
 const CODE_SAMPLE = `
 const TwoSyncedInputsSample = () => {
-  const [value, setValue] = useLocalStorage('two_components_key', '');
+  const { value, changeValue } = useLocalStorage('two_components_key', '');
 
   const handleOnChange = (event) => {
-    setValue(event.target.value);
+    changeValue(event.target.value);
   };
 
   return (
@@ -31,7 +31,7 @@ const TwoSyncedInputsSample = () => {
 `
 
 const TwoSyncedInputsSample = () => {
-  const [value, setValue] = useLocalStorage('two_components_key', '');
+  const { value, changeValue } = useLocalStorage('two_components_key', '');
 
   return (
     <Sample code={CODE_SAMPLE}>
@@ -39,7 +39,7 @@ const TwoSyncedInputsSample = () => {
         <Input
           label="Please enter a value to see how it is reflected in the screen"
           value={value}
-          onChange={setValue}
+          onChange={changeValue}
         />
       </section>
       <section>

@@ -17,3 +17,7 @@ export const getValueFromLocalStorage = (key) => {
 export const setValueToLocalStorage = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 }
+
+export const removeValueFromLocalStorage = (key) => {
+  localStorage.removeItem(key);
+}
