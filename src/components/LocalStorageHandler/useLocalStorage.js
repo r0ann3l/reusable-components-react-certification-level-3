@@ -24,7 +24,11 @@ const useLocalStorage = (key, initialValue) => {
     setValue(newValue);
   }
 
-  return [value, changeValue];
+  const resetValue = () => {
+    changeValue(initialValue);
+  }
+
+  return [value, changeValue, resetValue];
 }
 
 export default useLocalStorage;
