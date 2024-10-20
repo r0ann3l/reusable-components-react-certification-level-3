@@ -32,7 +32,7 @@ const ReloadSample = () => {
   }
 
   return (
-    <Sample code={CODE_SAMPLE} description={'Even if you refresh the page the value will be there'}>
+    <Sample code={CODE_SAMPLE} description={'Even if you refresh the page the value will be there.'}>
       <section>
         <Input
           label="Please enter a value"

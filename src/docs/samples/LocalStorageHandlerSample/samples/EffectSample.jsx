@@ -42,7 +42,7 @@ const EffectSample = () => {
       description={
         <>
           <p>You can also change the value directly in your browser's localStorage. It will be reflected here too. Look for <code>effect_key</code> and change it.</p>
-          <p>Or you can even observe the value and execute an action when it changes, like printing it in the console</p>
+          <p>Or you can even observe the value and execute an action when it changes, like printing it in the console.</p>
         </>
       }>
       <section>

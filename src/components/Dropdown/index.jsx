@@ -5,7 +5,14 @@ import useSearch from './hooks/useSearch';
 import './index.css';
 import SearchInput from './components/SearchInput';
 
-const Dropdown = ({ placeholder, values, valueChange, labelProperty = 'value', idProperty = 'id' }) => {
+const Dropdown = ({
+  placeholder,
+  values,
+  valueChange,
+  labelProperty = 'value',
+  idProperty = 'id',
+  limit = 10
+}) => {
   const [query, setQuery] = useState('');
   const [showOptions, setShowOptions] = useState(false);
   const [optionsWidth, setOptionsWidth] = useState(0);
@@ -30,7 +37,7 @@ const Dropdown = ({ placeholder, values, valueChange, labelProperty = 'value', i
         showOptions ?
           <ul style={{ width: optionsWidth + 'px' }}>
             {
-              filteredValues.map((item) => <SelectableItem
+              filteredValues.slice(0, limit).map((item) => <SelectableItem
                 key={item[idProperty]}
                 value={item[labelProperty]}
                 query={query}
@@ -58,6 +65,7 @@ Dropdown.propTypes = {
       value: PropTypes.string
     })
   ),
+  limit: PropTypes.number,
 }
 
 export default Dropdown;

@@ -7,7 +7,6 @@ const SearchInput = ({ placeholder, value, onChange, showOptions, onResize }) =>
   useEffect(() => {
     const handleOnResize = () => {
       onResize(inputRef.current?.offsetWidth);
-      console.log(inputRef.current?.offsetWidth)
     }
 
     window.addEventListener('resize', handleOnResize);
